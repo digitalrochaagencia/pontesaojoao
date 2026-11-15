@@ -56,8 +56,8 @@
 - [x] **Centralizar o ponto focal das imagens das heroes conforme a referência**
   - Em todas as oito páginas, usar `object-position: 50% 50%` no desktop e no mobile, mantendo a composição e o recorte responsivo da hero.
   - Referência: `https://www.pontesaojoaoimplantes.com.br/`.
-- [x] **Imagem da hero vem antes das informações no mobile**
-  - Nas oito páginas, em telas até 820 px a imagem aparece primeiro e centralizada; eyebrow, título, descrição e botões, inclusive “Agendar avaliação” pelo WhatsApp, ficam abaixo. No desktop, preservar as duas colunas da referência.
+- [x] **Ordem da hero mobile igual à referência**
+  - Nas oito páginas, em telas até 820 px aparecem primeiro eyebrow, título, descrição e botões, inclusive “Agendar avaliação” pelo WhatsApp; depois vem a imagem centralizada. No desktop, preservar texto à esquerda e imagem à direita.
 - [x] **Telefone removido da faixa superior**
   - Ocultar somente o número na parte superior; manter o telefone e os links diretos de chamada nas demais áreas do site.
 - [x] **Favicon com a marca Ponte São João**
