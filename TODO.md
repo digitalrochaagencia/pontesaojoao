@@ -77,5 +77,5 @@
 - [x] **Mensagem institucional na faixa superior**
   - Mostrar “Atendimento particular · Não atendemos convênios” na parte de cima e retirar dali o aviso de horário sazonal; manter o horário especial no FAQ e na localização.
 
-- [x] **WhatsApp sempre visível sem cobrir a hero no mobile**
-  - Nunca ocultar o botão: quando sua posição flutuante sobrepuser a foto, movê-lo para a área livre acima da imagem e devolvê-lo ao canto assim que não houver sobreposição. Validado visualmente em 390×720 e 390×844; “Agendar avaliação” permanece disponível.
+- [x] **Hero mobile compacta com o WhatsApp visível abaixo da foto**
+  - Em todas as páginas, exibir a imagem da hero e o WhatsApp na tela móvel com o botão sempre abaixo da imagem, sem ocultá-lo nem sobrepô-la; manter os textos e links de cada página e o layout desktop. Validado visualmente em 390×720 nas oito rotas e em 320×640 nas heroes mais longas.

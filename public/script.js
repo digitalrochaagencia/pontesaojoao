@@ -42,46 +42,30 @@ const heroPhoto = document.querySelector('.hero-inspired .hero-photo');
 const mobileViewport = window.matchMedia('(max-width: 820px)');
 
 if (whatsappButton && heroPhoto) {
-  let frameRequested = false;
+  function positionWhatsAppBelowHero() {
+    whatsappButton.style.removeProperty('top');
+    whatsappButton.style.removeProperty('bottom');
 
-  function updateWhatsAppPosition() {
-    frameRequested = false;
+    if (!mobileViewport.matches || window.scrollY > 1) return;
 
-    if (!mobileViewport.matches) {
-      whatsappButton.classList.remove('is-positioned-above-hero');
-      whatsappButton.style.removeProperty('--whatsapp-hero-top');
-      return;
-    }
-
-    if (whatsappButton.classList.contains('is-positioned-above-hero')) {
-      whatsappButton.classList.remove('is-positioned-above-hero');
-      whatsappButton.style.removeProperty('--whatsapp-hero-top');
-    }
-
-    const button = whatsappButton.getBoundingClientRect();
     const photo = heroPhoto.getBoundingClientRect();
-    const overlaps = button.left < photo.right
-      && button.right > photo.left
-      && button.top < photo.bottom
-      && button.bottom > photo.top;
+    const buttonHeight = whatsappButton.getBoundingClientRect().height || 44;
+    const gap = 12;
+    const buttonTop = photo.bottom + gap;
+    const safeBottom = window.innerHeight - 8;
+    const photoIsVisible = photo.bottom > 0 && photo.top < window.innerHeight;
+    const fitsBelowPhoto = buttonTop + buttonHeight <= safeBottom;
 
-    if (overlaps) {
-      const top = Math.max(8, photo.top - button.height - 6);
-      whatsappButton.style.setProperty('--whatsapp-hero-top', `${top}px`);
-      whatsappButton.classList.add('is-positioned-above-hero');
+    if (photoIsVisible && fitsBelowPhoto) {
+      whatsappButton.style.top = `${buttonTop}px`;
+      whatsappButton.style.bottom = 'auto';
     }
   }
 
-  function scheduleWhatsAppPositionCheck() {
-    if (frameRequested) return;
-    frameRequested = true;
-    window.requestAnimationFrame(updateWhatsAppPosition);
-  }
-
-  window.addEventListener('scroll', scheduleWhatsAppPositionCheck, { passive: true });
-  window.addEventListener('resize', scheduleWhatsAppPositionCheck, { passive: true });
-  window.addEventListener('load', scheduleWhatsAppPositionCheck, { once: true });
-  mobileViewport.addEventListener('change', scheduleWhatsAppPositionCheck);
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleWhatsAppPositionCheck);
-  scheduleWhatsAppPositionCheck();
+  window.addEventListener('scroll', positionWhatsAppBelowHero, { passive: true });
+  window.addEventListener('resize', positionWhatsAppBelowHero, { passive: true });
+  window.addEventListener('load', positionWhatsAppBelowHero, { once: true });
+  mobileViewport.addEventListener('change', positionWhatsAppBelowHero);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(positionWhatsAppBelowHero);
+  positionWhatsAppBelowHero();
 }
