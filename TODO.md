@@ -27,7 +27,7 @@
   - Layout responsivo, skip link, foco visível e `prefers-reduced-motion`.
   - Deploy em container preparado no Webdev.
 - [x] **Tipografia inspirada na referência visual**
-  - Usar Inter no corpo e nos controles e Overpass nos títulos, sem copiar textos, dados ou imagens da referência.
+  - Usar DM Sans no corpo e nos controles e Playfair Display nos títulos, sem copiar textos, dados ou imagens da referência.
   - Manter o botão flutuante do WhatsApp do site e seu número oficial; usar microtexto próprio da clínica.
 
 - [x] **WhatsApp e navegação móvel ajustados**
@@ -43,3 +43,9 @@
   - Os números de contato no cabeçalho e no rodapé são links `tel:` para iniciar a chamada no aparelho, com rótulo acessível.
 - [x] **Imagem completa em todas as heroes**
   - A primeira imagem de cada página mantém proporção original e aparece inteira em desktop e mobile, sem corte; a etiqueta fica fora da foto.
+- [x] **Escala da hero equilibrada em mobile e desktop**
+  - Reduzir a altura da primeira imagem no celular sem recortar o arquivo; preservar o destaque amplo no computador, conforme a referência indicada.
+- [x] **CTAs padronizados nas heroes**
+  - “Agendar avaliação” é sempre o primeiro; “Conheça os tratamentos” é o segundo e leva à página de tratamentos em todas as rotas.
+- [x] **Tipografia da referência pontesaojoaoimplantes.com.br**
+  - DM Sans em textos e controles; Playfair Display em títulos, aplicada globalmente nas oito páginas.
