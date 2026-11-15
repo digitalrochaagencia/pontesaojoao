@@ -93,16 +93,8 @@
 .hero-inspired{
   background:#fbfaf7;
   --hero-image-position-desktop:50% 50%;
-  --hero-image-position-mobile:50% 24%;
+  --hero-image-position-mobile:50% 50%;
 }
-.hero-inspired.hero-home{--hero-image-position-desktop:50% 56%;--hero-image-position-mobile:50% 56%}
-.hero-inspired.hero-rehab{--hero-image-position-desktop:58% 50%;--hero-image-position-mobile:50% 28%}
-.hero-inspired.hero-surgery{--hero-image-position-desktop:56% 50%;--hero-image-position-mobile:50% 42%}
-.hero-inspired.hero-general{--hero-image-position-desktop:50% 54%;--hero-image-position-mobile:50% 45%}
-.hero-inspired.hero-emergency{--hero-image-position-desktop:64% 50%;--hero-image-position-mobile:50% 58%}
-.hero-inspired.hero-treatments{--hero-image-position-desktop:62% 50%;--hero-image-position-mobile:50% 52%}
-.hero-inspired.hero-team{--hero-image-position-desktop:50% 54%;--hero-image-position-mobile:50% 56%}
-.hero-inspired.hero-faq{--hero-image-position-desktop:58% 52%;--hero-image-position-mobile:50% 55%}
 .hero-inspired .hero-grid{min-height:auto;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);align-items:start;padding:44px 0 66px;gap:clamp(28px,5.5vw,72px)}
 .hero-inspired .hero-copy{min-width:0;padding-block:12px}
 .hero-inspired h1{font-size:clamp(44px,4.5vw,60px);font-weight:500;line-height:1.12;letter-spacing:-.045em}

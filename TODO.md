@@ -53,6 +53,9 @@
   - Usar DM Sans nos textos e controles e Playfair Display nos títulos, com os pesos e a escala visual da referência `https://www.pontesaojoaoimplantes.com.br/`.
   - Em todas as páginas, manter o texto à esquerda e a imagem alinhada à direita no desktop; preservar o recorte responsivo e o ponto focal próprio de cada foto.
   - Sobrepor à imagem um cartão clicável com ícone do WhatsApp, “Converse com a equipe” e “Tire suas dúvidas”, levando ao WhatsApp da página; manter também o botão flutuante de WhatsApp.
+- [x] **Centralizar o ponto focal das imagens das heroes conforme a referência**
+  - Em todas as oito páginas, usar `object-position: 50% 50%` no desktop e no mobile, mantendo a composição e o recorte responsivo da hero.
+  - Referência: `https://www.pontesaojoaoimplantes.com.br/`.
 - [x] **Telefone removido da faixa superior**
   - Ocultar somente o número na parte superior; manter o telefone e os links diretos de chamada nas demais áreas do site.
 - [x] **Favicon com a marca Ponte São João**
