@@ -41,12 +41,12 @@
   - Ajustar colunas, espaçamentos e dimensões de fotos e mapas em todas as rotas para desktop, tablet e celular; carregar fotos de cartões sob demanda.
 - [x] **Telefone com chamada direta**
   - Os números de contato no cabeçalho e no rodapé são links `tel:` para iniciar a chamada no aparelho, com rótulo acessível.
-- [x] **Imagem completa em todas as heroes**
-  - A primeira imagem de cada página mantém proporção original e aparece inteira em desktop e mobile, sem corte; a etiqueta fica fora da foto.
+- [x] **Imagens das heroes com apresentação responsiva**
+  - Imagens das páginas internas permanecem completas em desktop e mobile; na Home, a imagem fica ampla e quadrada no desktop e usa faixa panorâmica com recorte intencional no mobile, conforme a referência mais recente.
 - [x] **Escala da hero equilibrada em mobile e desktop**
-  - Reduzir a altura da primeira imagem no celular sem recortar o arquivo; preservar o destaque amplo no computador, conforme a referência indicada.
-- [x] **CTAs padronizados nas heroes**
-  - “Agendar avaliação” é sempre o primeiro; “Conheça os tratamentos” é o segundo e leva à página de tratamentos em todas as rotas.
+  - A Home usa imagem quase quadrada no computador e proporção panorâmica no celular; as páginas internas mantêm as imagens completas.
+- [x] **CTAs das heroes**
+  - “Agendar avaliação” permanece como primeiro botão e abre o WhatsApp; “Conheça os tratamentos” aponta à seção específica da própria rota, exceto em `/clinica-geral`, que abre `/tratamentos`.
 - [x] **Tipografia da referência pontesaojoaoimplantes.com.br**
   - DM Sans em textos e controles; Playfair Display em títulos, aplicada globalmente nas oito páginas.
 
@@ -59,3 +59,7 @@
   - `/implantes-proteses-cirurgias` → `#implantes-proteses`; `/cirurgias` → `#procedimentos`; `/` → `#areas`.
   - `/urgencia-odontologica` → `#urgencia`; `/tratamentos` → `#tratamentos`; `/profissionais` → `#equipe`; `/duvidas` → `#duvidas`.
   - Exceção: `/clinica-geral` → `/tratamentos`. O botão “Agendar avaliação” continua abrindo o WhatsApp.
+
+- [x] **Hero inicial inspirada na referência de implantes**
+  - Aplicar composição clara em duas colunas no desktop, imagem quadrada ampla com etiqueta própria sobreposta; no mobile, apresentar a foto em faixa panorâmica como a referência, sem alterar as demais páginas.
+  - Referência observada: https://www.pontesaojoaoimplantes.com.br/ — foto quase quadrada ampla no desktop; no viewport móvel de 390 px, faixa panorâmica próxima de 2,85:1, sem etiqueta sobre a foto.
