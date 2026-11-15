@@ -49,3 +49,8 @@
   - “Agendar avaliação” é sempre o primeiro; “Conheça os tratamentos” é o segundo e leva à página de tratamentos em todas as rotas.
 - [x] **Tipografia da referência pontesaojoaoimplantes.com.br**
   - DM Sans em textos e controles; Playfair Display em títulos, aplicada globalmente nas oito páginas.
+
+- [x] **Telefone removido da faixa superior**
+  - Ocultar somente o número na parte superior; manter o telefone e os links diretos de chamada nas demais áreas do site.
+- [x] **Favicon com a marca Ponte São João**
+  - Usar o símbolo da logo da clínica como ícone de página legível e servi-lo como favicon.
