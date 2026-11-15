@@ -55,7 +55,7 @@
   - Sobrepor à imagem um cartão clicável com ícone do WhatsApp, “Converse com a equipe” e “Tire suas dúvidas”, levando ao WhatsApp da página; manter também o botão flutuante de WhatsApp.
 - [x] **Dimensionar e organizar as heroes como na referência**
   - Desktop: texto à esquerda e foto à direita, com moldura próxima de `1.12:1`; celular: texto e CTAs primeiro, foto panorâmica próxima de `2.85:1` depois. Ajustar o ponto focal por imagem para preservar o assunto principal.
-  - Posicionar o cartão sobre a foto junto à base esquerda e manter o WhatsApp flutuante `44×44 px`, a `24 px` da direita e da base (respeitando a safe area móvel), visível em toda a rolagem.
+  - Posicionar o cartão sobre a foto junto à base esquerda. Manter o WhatsApp flutuante `44×44 px` fixo no canto inferior direito, a `24 px` das bordas e visível durante a rolagem. Somente no mobile, reservar uma faixa à direita das frases para não encobri-las; preservar a posição do botão, as imagens e o layout desktop.
   - Na Home, manter a avaliação do Google entre a nota de atendimento e a foto, seguindo a ordem da referência.
   - Referência: `https://www.pontesaojoaoimplantes.com.br/`.
 - [x] **Ordem da hero mobile igual à referência**

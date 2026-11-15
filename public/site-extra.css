@@ -148,3 +148,22 @@
 
 /* Distância constante do WhatsApp flutuante, com proteção para safe areas móveis. */
 .whatsapp-float{right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+
+/* No mobile, reservar uma faixa discreta à direita para o botão fixo não cobrir o texto. */
+@media(max-width:820px){
+  :is(.content-section,.location,.final-cta) :is(h2,h3,p,li,summary,blockquote,.profile-link,.legal-note,.pill-list span,.review-badge>*){
+    max-width:calc(100% - 56px)!important;
+    margin-left:0!important;
+    margin-right:auto!important;
+  }
+  .content-section .pill-list span{display:inline-block;white-space:normal}
+  .content-section .treatment-image span{left:15px;right:auto}
+  footer .footer-grid>div:first-child>span{display:inline-block}
+  .content-section .pill-list{width:calc(100% - 56px);max-width:none;margin-left:0!important;margin-right:auto!important;justify-content:flex-start}
+  .content-section .pill-list span{max-width:100%!important;margin:0!important}
+  footer :is(h2,h3,p,li,summary,blockquote,.footer-grid a:not(.brand),.footer-grid span,.footer-bottom span){
+    max-width:calc(100% - 56px)!important;
+    margin-left:0!important;
+    margin-right:auto!important;
+  }
+}
