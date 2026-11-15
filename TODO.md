@@ -53,9 +53,10 @@
   - Usar DM Sans nos textos e controles e Playfair Display nos títulos, com os pesos e a escala visual da referência `https://www.pontesaojoaoimplantes.com.br/`.
   - Em todas as páginas, manter o texto à esquerda e a imagem alinhada à direita no desktop; preservar o recorte responsivo e o ponto focal próprio de cada foto.
   - Sobrepor à imagem um cartão clicável com ícone do WhatsApp, “Converse com a equipe” e “Tire suas dúvidas”, levando ao WhatsApp da página; manter também o botão flutuante de WhatsApp.
-- [x] **Enquadrar individualmente as imagens das heroes**
-  - Usar o ponto focal específico de cada foto para manter o assunto principal visível; nas sete páginas, usar moldura móvel próxima de `1.8:1` e preservar a moldura original de Equipe.
-  - No celular, manter o cartão de WhatsApp da foto visível e ocultar o botão flutuante só enquanto ele não couber inteiro abaixo da imagem.
+- [x] **Dimensionar e organizar as heroes como na referência**
+  - Desktop: texto à esquerda e foto à direita, com moldura próxima de `1.12:1`; celular: texto e CTAs primeiro, foto panorâmica próxima de `2.85:1` depois. Ajustar o ponto focal por imagem para preservar o assunto principal.
+  - Posicionar o cartão sobre a foto junto à base esquerda e manter o WhatsApp flutuante `44×44 px`, a `24 px` da direita e da base (respeitando a safe area móvel), visível em toda a rolagem.
+  - Na Home, manter a avaliação do Google entre a nota de atendimento e a foto, seguindo a ordem da referência.
   - Referência: `https://www.pontesaojoaoimplantes.com.br/`.
 - [x] **Ordem da hero mobile igual à referência**
   - Nas oito páginas, em telas até 820 px aparecem primeiro eyebrow, título, descrição e botões, inclusive “Agendar avaliação” pelo WhatsApp; depois vem a foto em largura integral, com foco próprio por imagem. No desktop, preservar texto à esquerda e imagem à direita.
@@ -70,10 +71,10 @@
   - Manter “Agendar avaliação” como primeiro botão e abrir o WhatsApp.
 - [x] **Hero inicial da Home inspirada na referência de implantes**
   - Composição clara em duas colunas no desktop, imagem ampla com cartão de WhatsApp sobreposto; no mobile, texto e CTAs primeiro, depois foto em largura integral com foco ajustado e cartão visível.
-  - Referência: https://www.pontesaojoaoimplantes.com.br/ — foto quase quadrada no desktop e mobile adaptado para mostrar mais da imagem sem cobrir o assunto principal.
+  - Referência: https://www.pontesaojoaoimplantes.com.br/ — moldura próxima de `1.12:1` no desktop e panorâmica próxima de `2.85:1` no mobile; na Home, avaliação do Google aparece entre a nota e a foto.
 
 - [x] **Aplicar a composição da hero em todas as páginas**
-  - Em cada rota, mostrar a imagem da hero ampla e quase quadrada no desktop, com cartão de WhatsApp sobreposto; no mobile, exibir texto e CTAs antes da foto e ajustar o ponto focal para cada imagem.
+  - Em cada rota, mostrar a imagem da hero com moldura próxima de `1.12:1` no desktop e `2.85:1` no mobile, com cartão de WhatsApp sobreposto; no celular, exibir texto e CTAs antes da foto e ajustar o ponto focal para cada imagem.
   - Preservar a imagem, os textos, os links e o conteúdo próprios de cada página.
   - Referência: https://www.pontesaojoaoimplantes.com.br/.
 - [x] **Padronizar as sete heroes restantes pela página Equipe**
