@@ -128,3 +128,7 @@
   .hero-inspired.hero-emergency .hero-photo img{object-position:center 58%!important}
   .hero-inspired.hero-faq .hero-photo img{object-position:center 55%!important}
 }
+
+
+/* Em telas móveis, o WhatsApp não deve cobrir a foto da hero; reaparece ao sair da área da imagem. */
+.whatsapp-float.is-hidden-over-hero{visibility:hidden;opacity:0;pointer-events:none}

@@ -50,14 +50,13 @@
 - [x] **Tipografia da referência pontesaojoaoimplantes.com.br**
   - DM Sans em textos e controles; Playfair Display em títulos, aplicada globalmente nas oito páginas.
 - [x] **Telefone removido da faixa superior**
-
-- [x] **Telefone removido da faixa superior**
   - Ocultar somente o número na parte superior; manter o telefone e os links diretos de chamada nas demais áreas do site.
 - [x] **Favicon com a marca Ponte São João**
   - Usar o símbolo da logo da clínica como ícone de página legível e servi-lo como favicon.
 
-- [x] **Segundo botão das heroes leva à equipe**
-  - Em todas as páginas, trocar “Conheça os tratamentos” por “Conheça nossa equipe” e levar à seção dos dentistas em `/profissionais#equipe`; na página `/profissionais`, rolar para `#equipe`.
+- [x] **Segundo botão das heroes acompanha o conteúdo da página**
+  - Em `/`, `/implantes-proteses-cirurgias`, `/urgencia-odontologica`, `/cirurgias`, `/tratamentos` e `/duvidas`, mostrar “Conheça nossos tratamentos” e apontar para a seção de tratamentos da própria página.
+  - Em `/clinica-geral`, “Conheça nossos tratamentos” abre `/tratamentos`. Somente em `/profissionais`, manter “Conheça nossa equipe” e apontar para `#equipe`.
   - Manter “Agendar avaliação” como primeiro botão e abrir o WhatsApp.
 - [x] **Hero inicial da Home inspirada na referência de implantes**
   - Composição clara em duas colunas no desktop, imagem ampla com etiqueta própria sobreposta; no mobile, foto panorâmica como a referência.
@@ -77,3 +76,6 @@
 
 - [x] **Mensagem institucional na faixa superior**
   - Mostrar “Atendimento particular · Não atendemos convênios” na parte de cima e retirar dali o aviso de horário sazonal; manter o horário especial no FAQ e na localização.
+
+- [x] **Botão flutuante não cobre a imagem inicial da hero no mobile**
+  - Ao abrir a página em viewport móvel, o WhatsApp não cobre a foto; a CTA principal “Agendar avaliação” continua visível. O botão flutuante reaparece quando deixa a área da hero.

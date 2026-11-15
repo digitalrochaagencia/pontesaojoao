@@ -36,3 +36,41 @@ if (toggle && nav) {
     if (event.matches) setMenuOpen(false);
   });
 }
+
+const whatsappButton = document.querySelector('.whatsapp-float');
+const heroPhoto = document.querySelector('.hero-inspired .hero-photo');
+const mobileViewport = window.matchMedia('(max-width: 820px)');
+
+if (whatsappButton && heroPhoto) {
+  let frameRequested = false;
+
+  function updateWhatsAppOverlap() {
+    frameRequested = false;
+    if (!mobileViewport.matches) {
+      whatsappButton.classList.remove('is-hidden-over-hero');
+      return;
+    }
+
+    const button = whatsappButton.getBoundingClientRect();
+    const photo = heroPhoto.getBoundingClientRect();
+    const overlaps = button.left < photo.right
+      && button.right > photo.left
+      && button.top < photo.bottom
+      && button.bottom > photo.top;
+
+    whatsappButton.classList.toggle('is-hidden-over-hero', overlaps);
+  }
+
+  function scheduleWhatsAppOverlapCheck() {
+    if (frameRequested) return;
+    frameRequested = true;
+    window.requestAnimationFrame(updateWhatsAppOverlap);
+  }
+
+  window.addEventListener('scroll', scheduleWhatsAppOverlapCheck, { passive: true });
+  window.addEventListener('resize', scheduleWhatsAppOverlapCheck, { passive: true });
+  window.addEventListener('load', scheduleWhatsAppOverlapCheck, { once: true });
+  mobileViewport.addEventListener('change', scheduleWhatsAppOverlapCheck);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleWhatsAppOverlapCheck);
+  scheduleWhatsAppOverlapCheck();
+}
