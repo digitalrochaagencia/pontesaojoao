@@ -44,11 +44,18 @@ const mobileViewport = window.matchMedia('(max-width: 820px)');
 if (whatsappButton && heroPhoto) {
   let frameRequested = false;
 
-  function updateWhatsAppOverlap() {
+  function updateWhatsAppPosition() {
     frameRequested = false;
+
     if (!mobileViewport.matches) {
-      whatsappButton.classList.remove('is-hidden-over-hero');
+      whatsappButton.classList.remove('is-positioned-above-hero');
+      whatsappButton.style.removeProperty('--whatsapp-hero-top');
       return;
+    }
+
+    if (whatsappButton.classList.contains('is-positioned-above-hero')) {
+      whatsappButton.classList.remove('is-positioned-above-hero');
+      whatsappButton.style.removeProperty('--whatsapp-hero-top');
     }
 
     const button = whatsappButton.getBoundingClientRect();
@@ -58,19 +65,23 @@ if (whatsappButton && heroPhoto) {
       && button.top < photo.bottom
       && button.bottom > photo.top;
 
-    whatsappButton.classList.toggle('is-hidden-over-hero', overlaps);
+    if (overlaps) {
+      const top = Math.max(8, photo.top - button.height - 6);
+      whatsappButton.style.setProperty('--whatsapp-hero-top', `${top}px`);
+      whatsappButton.classList.add('is-positioned-above-hero');
+    }
   }
 
-  function scheduleWhatsAppOverlapCheck() {
+  function scheduleWhatsAppPositionCheck() {
     if (frameRequested) return;
     frameRequested = true;
-    window.requestAnimationFrame(updateWhatsAppOverlap);
+    window.requestAnimationFrame(updateWhatsAppPosition);
   }
 
-  window.addEventListener('scroll', scheduleWhatsAppOverlapCheck, { passive: true });
-  window.addEventListener('resize', scheduleWhatsAppOverlapCheck, { passive: true });
-  window.addEventListener('load', scheduleWhatsAppOverlapCheck, { once: true });
-  mobileViewport.addEventListener('change', scheduleWhatsAppOverlapCheck);
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleWhatsAppOverlapCheck);
-  scheduleWhatsAppOverlapCheck();
+  window.addEventListener('scroll', scheduleWhatsAppPositionCheck, { passive: true });
+  window.addEventListener('resize', scheduleWhatsAppPositionCheck, { passive: true });
+  window.addEventListener('load', scheduleWhatsAppPositionCheck, { once: true });
+  mobileViewport.addEventListener('change', scheduleWhatsAppPositionCheck);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleWhatsAppPositionCheck);
+  scheduleWhatsAppPositionCheck();
 }

@@ -130,5 +130,5 @@
 }
 
 
-/* Em telas móveis, o WhatsApp não deve cobrir a foto da hero; reaparece ao sair da área da imagem. */
-.whatsapp-float.is-hidden-over-hero{visibility:hidden;opacity:0;pointer-events:none}
+/* O botão segue sempre visível e usa o espaço entre o texto e a hero quando necessário. */
+@media(max-width:820px){.hero-inspired .hero-grid{gap:30px}.whatsapp-float.is-positioned-above-hero{top:var(--whatsapp-hero-top);bottom:auto}}

@@ -77,5 +77,5 @@
 - [x] **Mensagem institucional na faixa superior**
   - Mostrar “Atendimento particular · Não atendemos convênios” na parte de cima e retirar dali o aviso de horário sazonal; manter o horário especial no FAQ e na localização.
 
-- [x] **Botão flutuante não cobre a imagem inicial da hero no mobile**
-  - Ao abrir a página em viewport móvel, o WhatsApp não cobre a foto; a CTA principal “Agendar avaliação” continua visível. O botão flutuante reaparece quando deixa a área da hero.
+- [x] **WhatsApp sempre visível sem cobrir a hero no mobile**
+  - Nunca ocultar o botão: quando sua posição flutuante sobrepuser a foto, movê-lo para a área livre acima da imagem e devolvê-lo ao canto assim que não houver sobreposição. Validado visualmente em 390×720 e 390×844; “Agendar avaliação” permanece disponível.
