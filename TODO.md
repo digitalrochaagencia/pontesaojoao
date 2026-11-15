@@ -36,3 +36,8 @@
 - [x] **Botão flutuante de WhatsApp visualmente alinhado à referência**
   - Círculo de 44 px, ícone gráfico do WhatsApp de 24 px, posição de 24 px das bordas, sombra e anel pulsante; tooltip no desktop com frase própria da clínica.
   - Manter o destino no WhatsApp oficial da Ponte São João, sem usar o texto, número ou link da Digital Rocha.
+- [x] **Retratos da equipe e layout global responsivo**
+  - Confirmar as quatro associações por retrato e nome; exibir os originais completos sem corte nos cartões.
+  - Ajustar colunas, espaçamentos e dimensões de fotos e mapas em todas as rotas para desktop, tablet e celular; carregar fotos de cartões sob demanda.
+- [x] **Telefone com chamada direta**
+  - Os números de contato no cabeçalho e no rodapé são links `tel:` para iniciar a chamada no aparelho, com rótulo acessível.
