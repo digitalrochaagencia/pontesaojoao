@@ -41,3 +41,5 @@
   - Ajustar colunas, espaçamentos e dimensões de fotos e mapas em todas as rotas para desktop, tablet e celular; carregar fotos de cartões sob demanda.
 - [x] **Telefone com chamada direta**
   - Os números de contato no cabeçalho e no rodapé são links `tel:` para iniciar a chamada no aparelho, com rótulo acessível.
+- [x] **Imagem completa em todas as heroes**
+  - A primeira imagem de cada página mantém proporção original e aparece inteira em desktop e mobile, sem corte; a etiqueta fica fora da foto.
