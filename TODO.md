@@ -49,6 +49,10 @@
   - “Agendar avaliação” permanece como primeiro botão e abre o WhatsApp; o comportamento do segundo botão está descrito em seu próprio item abaixo.
 - [x] **Tipografia da referência pontesaojoaoimplantes.com.br**
   - DM Sans em textos e controles; Playfair Display em títulos, aplicada globalmente nas oito páginas.
+- [x] **Acabamento da hero conforme a referência: fontes e WhatsApp na imagem**
+  - Usar DM Sans nos textos e controles e Playfair Display nos títulos, com os pesos e a escala visual da referência `https://www.pontesaojoaoimplantes.com.br/`.
+  - Em todas as páginas, manter o texto à esquerda e a imagem alinhada à direita no desktop; preservar o recorte responsivo e o ponto focal próprio de cada foto.
+  - Sobrepor à imagem um cartão clicável com ícone do WhatsApp, “Converse com a equipe” e “Tire suas dúvidas”, levando ao WhatsApp da página; manter também o botão flutuante de WhatsApp.
 - [x] **Telefone removido da faixa superior**
   - Ocultar somente o número na parte superior; manter o telefone e os links diretos de chamada nas demais áreas do site.
 - [x] **Favicon com a marca Ponte São João**
