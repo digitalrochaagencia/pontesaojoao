@@ -29,3 +29,7 @@
 - [x] **Tipografia inspirada na referência visual**
   - Usar Inter no corpo e nos controles e Overpass nos títulos, sem copiar textos, dados ou imagens da referência.
   - Manter o botão flutuante do WhatsApp do site e seu número oficial; usar microtexto próprio da clínica.
+
+- [x] **WhatsApp e navegação móvel ajustados**
+  - Botão flutuante compacto, circular e verde, mantendo o número oficial e texto próprio da clínica.
+  - Menu responsivo com abertura suave, fechamento ao escolher uma página, clicar fora, pressionar Esc ou voltar à largura desktop.

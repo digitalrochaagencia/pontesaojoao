@@ -1,1 +1,23 @@
 .review-strip{display:flex;align-items:center;justify-content:space-between;gap:25px;border:1px solid var(--line);background:var(--white);border-radius:20px;padding:22px 28px;color:var(--green)}.review-strip>div{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.review-strip strong{color:var(--coral);letter-spacing:.12em}.review-strip b{color:var(--deep)}.review-strip span,.review-strip p{color:var(--muted);font-size:13px;margin:0}.review-strip a{font-size:12px;font-weight:800;display:flex;align-items:center;gap:8px}.location-extra{border-top:1px solid rgba(255,255,255,.18);margin-top:52px;padding-top:30px;display:grid;grid-template-columns:1fr .45fr;gap:60px}.location-extra h3{font:400 27px/1.1 Overpass,sans-serif;margin:0 0 14px;color:var(--white)}.location-extra .eyebrow{margin-bottom:10px}.location-extra>div>p:last-child{font-size:12px;line-height:1.9;color:#b9d1c8}.review-badge{align-self:center;display:flex;flex-direction:column;gap:5px;padding:20px 22px;border:1px solid rgba(255,255,255,.2);border-radius:16px}.review-badge strong{color:var(--gold);letter-spacing:.15em}.review-badge b{color:var(--white)}.review-badge span{color:#b9d1c8;font-size:12px}.review-badge a{color:var(--white);font-size:12px;font-weight:800;display:flex;gap:7px;align-items:center;margin-top:8px}@media(max-width:720px){.review-strip{display:block}.review-strip p{margin:12px 0}.location-extra{display:block}.review-badge{margin-top:25px}}
+
+
+/* Navegação responsiva em painel suspenso, com abertura suave e foco acessível. */
+.menu-toggle{align-items:center;justify-content:center;width:44px;height:44px;padding:10px;border-radius:50%;cursor:pointer;transition:background .2s ease}
+.menu-toggle:hover{background:#edf4fb}
+.menu-bars{display:flex;flex-direction:column;gap:5px}
+.menu-bars span{display:block;width:21px;height:2px;border-radius:99px;background:var(--deep);transition:transform .22s ease,opacity .18s ease}
+.menu-toggle.open .menu-bars span:first-child{transform:translateY(7px) rotate(45deg)}
+.menu-toggle.open .menu-bars span:nth-child(2){opacity:0}
+.menu-toggle.open .menu-bars span:last-child{transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1023px){
+  .menu-toggle{display:flex}
+  .main-nav{position:absolute;top:100%;left:0;right:0;display:flex;flex-direction:column;align-items:stretch;gap:0;max-height:0;padding:0 20px;overflow:hidden;visibility:hidden;pointer-events:none;opacity:0;transform:translateY(-8px);background:rgba(255,255,255,.98);backdrop-filter:blur(12px);border-bottom:1px solid transparent;box-shadow:0 18px 32px rgba(23,69,135,.12);transition:max-height .28s ease,padding .28s ease,opacity .2s ease,transform .2s ease,visibility 0s linear .28s}
+  .main-nav.open{display:flex;max-height:80dvh;padding:10px 20px 20px;overflow-y:auto;visibility:visible;pointer-events:auto;opacity:1;transform:translateY(0);border-color:var(--line);transition-delay:0s}
+  .main-nav>a:not(.nav-button){padding:12px 0;font-size:13px}
+  .main-nav>a[aria-current=page]:after{bottom:5px;right:auto;width:34px}
+  .main-nav .nav-button{justify-content:center;margin-top:10px}
+}
+.whatsapp-float{right:20px;bottom:20px;width:42px;height:42px;box-shadow:0 4px 15px rgba(37,211,102,.42)}
+.whatsapp-float svg{width:23px;height:23px}
+@media(max-width:720px){.whatsapp-float{right:20px;bottom:max(20px,env(safe-area-inset-bottom));width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.menu-toggle,.menu-bars span,.main-nav,.whatsapp-float{transition:none}.whatsapp-float:after{animation:none}}
