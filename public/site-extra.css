@@ -17,7 +17,4 @@
   .main-nav>a[aria-current=page]:after{bottom:5px;right:auto;width:34px}
   .main-nav .nav-button{justify-content:center;margin-top:10px}
 }
-.whatsapp-float{right:20px;bottom:20px;width:42px;height:42px;box-shadow:0 4px 15px rgba(37,211,102,.42)}
-.whatsapp-float svg{width:23px;height:23px}
-@media(max-width:720px){.whatsapp-float{right:20px;bottom:max(20px,env(safe-area-inset-bottom));width:42px;height:42px}}
 @media(prefers-reduced-motion:reduce){.menu-toggle,.menu-bars span,.main-nav,.whatsapp-float{transition:none}.whatsapp-float:after{animation:none}}

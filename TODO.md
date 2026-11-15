@@ -33,3 +33,6 @@
 - [x] **WhatsApp e navegação móvel ajustados**
   - Botão flutuante compacto, circular e verde, mantendo o número oficial e texto próprio da clínica.
   - Menu responsivo com abertura suave, fechamento ao escolher uma página, clicar fora, pressionar Esc ou voltar à largura desktop.
+- [x] **Botão flutuante de WhatsApp visualmente alinhado à referência**
+  - Círculo de 44 px, ícone gráfico do WhatsApp de 24 px, posição de 24 px das bordas, sombra e anel pulsante; tooltip no desktop com frase própria da clínica.
+  - Manter o destino no WhatsApp oficial da Ponte São João, sem usar o texto, número ou link da Digital Rocha.
