@@ -99,3 +99,4 @@
   .hero-photo img{width:100%!important;height:auto!important;max-width:100%!important;max-height:none!important;object-fit:contain!important}
 }
 .announcement{justify-content:center;text-align:center}
+:where(#areas,#implantes-proteses,#urgencia,#procedimentos,#tratamentos,#equipe,#duvidas){scroll-margin-top:32px}

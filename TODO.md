@@ -54,3 +54,8 @@
   - Ocultar somente o número na parte superior; manter o telefone e os links diretos de chamada nas demais áreas do site.
 - [x] **Favicon com a marca Ponte São João**
   - Usar o símbolo da logo da clínica como ícone de página legível e servi-lo como favicon.
+
+- [x] **Botão secundário da hero rola para a seção correta**
+  - `/implantes-proteses-cirurgias` → `#implantes-proteses`; `/cirurgias` → `#procedimentos`; `/` → `#areas`.
+  - `/urgencia-odontologica` → `#urgencia`; `/tratamentos` → `#tratamentos`; `/profissionais` → `#equipe`; `/duvidas` → `#duvidas`.
+  - Exceção: `/clinica-geral` → `/tratamentos`. O botão “Agendar avaliação” continua abrindo o WhatsApp.
