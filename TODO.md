@@ -92,3 +92,8 @@
 
 - [x] **Escala anterior da hero mobile restaurada com WhatsApp visível**
   - Em todas as páginas, restaurar o tamanho anterior dos títulos, textos, botões e espaçamentos da hero; deixar o WhatsApp abaixo da foto quando houver espaço e mantê-lo fixo e visível quando não couber, mesmo que se sobreponha à imagem. Preservar o conteúdo e os links existentes e o layout desktop. Validado visualmente em 390×720 e 390×844.
+
+- [x] **Remover a faixa azul do topo**
+  - Em todas as páginas, retirar a faixa institucional azul do cabeçalho; manter mensagens institucionais no rodapé e nos conteúdos próprios.
+- [x] **WhatsApp flutuante visível durante toda a rolagem**
+  - Nas oito rotas, manter o botão circular fixo no canto inferior direito, visível durante a rolagem e sem ocultá-lo ou reposicioná-lo conforme a hero.
