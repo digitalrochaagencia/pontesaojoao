@@ -50,7 +50,7 @@ if (whatsappButton && heroPhoto) {
 
     const photo = heroPhoto.getBoundingClientRect();
     const buttonHeight = whatsappButton.getBoundingClientRect().height || 44;
-    const gap = 12;
+    const gap = 6;
     const buttonTop = photo.bottom + gap;
     const safeBottom = window.innerHeight - 8;
     const photoIsVisible = photo.bottom > 0 && photo.top < window.innerHeight;
