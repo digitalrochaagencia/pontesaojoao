@@ -120,3 +120,11 @@
 }
 
 @media(min-width:821px){.hero-inspired.hero-surgery .hero-photo img{object-position:75% center!important}}
+
+
+/* Pontos focais das fotos selecionadas para as heroes de clínica e urgência. */
+@media(max-width:820px){
+  .hero-inspired.hero-general .hero-photo img{object-position:center 42%!important}
+  .hero-inspired.hero-emergency .hero-photo img{object-position:center 58%!important}
+  .hero-inspired.hero-faq .hero-photo img{object-position:center 55%!important}
+}

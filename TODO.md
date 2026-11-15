@@ -68,3 +68,10 @@
   - Em cada rota, mostrar a imagem da hero ampla e quase quadrada no desktop, com etiqueta própria sobreposta; no mobile, usar faixa panorâmica próxima de 2,85:1 sem etiqueta sobre a foto.
   - Preservar a imagem, os textos, os links e o conteúdo próprios de cada página.
   - Referência: https://www.pontesaojoaoimplantes.com.br/.
+
+- [x] **Substituir imagens repetidas por fotos oficiais adequadas**
+  - Escolher imagens nítidas e pertinentes de procedimentos e da clínica no site antigo e no Perfil da Empresa do Google; substituir as atuais repetidas sem reutilizar textos, números ou informações desses materiais.
+  - Manter textos, links, conteúdo e associação correta de cada imagem com sua página; evitar repetição desnecessária entre as heroes afetadas.
+
+- [x] **Aviso de horário especial de fim de ano**
+  - Informar que a clínica atenderá diretamente, sem intervalo, de segunda a sábado, das 8h às 19h; manter as referências de horário do site coerentes com esse período especial e não anunciar urgência 24h durante a vigência do aviso.
