@@ -46,20 +46,19 @@
 - [x] **Escala das heroes equilibrada em mobile e desktop**
   - Todas as rotas usam imagem ampla no computador e faixa panorâmica no celular, preservando o ponto focal de cada imagem.
 - [x] **CTAs das heroes**
-  - “Agendar avaliação” permanece como primeiro botão e abre o WhatsApp; “Conheça os tratamentos” aponta à seção específica da própria rota, exceto em `/clinica-geral`, que abre `/tratamentos`.
+  - “Agendar avaliação” permanece como primeiro botão e abre o WhatsApp; o comportamento do segundo botão está descrito em seu próprio item abaixo.
 - [x] **Tipografia da referência pontesaojoaoimplantes.com.br**
   - DM Sans em textos e controles; Playfair Display em títulos, aplicada globalmente nas oito páginas.
+- [x] **Telefone removido da faixa superior**
 
 - [x] **Telefone removido da faixa superior**
   - Ocultar somente o número na parte superior; manter o telefone e os links diretos de chamada nas demais áreas do site.
 - [x] **Favicon com a marca Ponte São João**
   - Usar o símbolo da logo da clínica como ícone de página legível e servi-lo como favicon.
 
-- [x] **Botão secundário da hero rola para a seção correta**
-  - `/implantes-proteses-cirurgias` → `#implantes-proteses`; `/cirurgias` → `#procedimentos`; `/` → `#areas`.
-  - `/urgencia-odontologica` → `#urgencia`; `/tratamentos` → `#tratamentos`; `/profissionais` → `#equipe`; `/duvidas` → `#duvidas`.
-  - Exceção: `/clinica-geral` → `/tratamentos`. O botão “Agendar avaliação” continua abrindo o WhatsApp.
-
+- [x] **Segundo botão das heroes leva à equipe**
+  - Em todas as páginas, trocar “Conheça os tratamentos” por “Conheça nossa equipe” e levar à seção dos dentistas em `/profissionais#equipe`; na página `/profissionais`, rolar para `#equipe`.
+  - Manter “Agendar avaliação” como primeiro botão e abrir o WhatsApp.
 - [x] **Hero inicial da Home inspirada na referência de implantes**
   - Composição clara em duas colunas no desktop, imagem ampla com etiqueta própria sobreposta; no mobile, foto panorâmica como a referência.
   - Referência: https://www.pontesaojoaoimplantes.com.br/ — foto quase quadrada no desktop; no viewport móvel de 390 px, faixa próxima de 2,85:1, sem etiqueta sobre a foto.
@@ -75,3 +74,6 @@
 
 - [x] **Aviso de horário especial de fim de ano**
   - Informar que a clínica atenderá diretamente, sem intervalo, de segunda a sábado, das 8h às 19h; manter as referências de horário do site coerentes com esse período especial e não anunciar urgência 24h durante a vigência do aviso.
+
+- [x] **Mensagem institucional na faixa superior**
+  - Mostrar “Atendimento particular · Não atendemos convênios” na parte de cima e retirar dali o aviso de horário sazonal; manter o horário especial no FAQ e na localização.
