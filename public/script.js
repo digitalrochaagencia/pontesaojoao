@@ -45,8 +45,9 @@ if (whatsappButton && heroPhoto) {
   function positionWhatsAppBelowHero() {
     whatsappButton.style.removeProperty('top');
     whatsappButton.style.removeProperty('bottom');
+    whatsappButton.style.removeProperty('visibility');
 
-    if (!mobileViewport.matches || window.scrollY > 1) return;
+    if (!mobileViewport.matches) return;
 
     const photo = heroPhoto.getBoundingClientRect();
     const buttonHeight = whatsappButton.getBoundingClientRect().height || 44;
@@ -55,6 +56,19 @@ if (whatsappButton && heroPhoto) {
     const safeBottom = window.innerHeight - 8;
     const photoIsVisible = photo.bottom > 0 && photo.top < window.innerHeight;
     const fitsBelowPhoto = buttonTop + buttonHeight <= safeBottom;
+    const heroBounds = heroPhoto.closest('.hero-inspired')?.getBoundingClientRect();
+    const heroIsVisible = Boolean(heroBounds && heroBounds.bottom > 0 && heroBounds.top < window.innerHeight);
+
+    if (!heroIsVisible) return;
+
+    if (!heroPhoto.closest('.hero-team')) {
+      whatsappButton.style.top = `${buttonTop}px`;
+      whatsappButton.style.bottom = 'auto';
+      if (!photoIsVisible || !fitsBelowPhoto) whatsappButton.style.visibility = 'hidden';
+      return;
+    }
+
+    if (window.scrollY > 1) return;
 
     if (photoIsVisible && fitsBelowPhoto) {
       whatsappButton.style.top = `${buttonTop}px`;
