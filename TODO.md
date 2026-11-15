@@ -26,3 +26,6 @@
   - Títulos, descrições, canonical, Open Graph, Twitter Card, sitemap, robots, manifesto de rotas e 404 com noindex.
   - Layout responsivo, skip link, foco visível e `prefers-reduced-motion`.
   - Deploy em container preparado no Webdev.
+- [x] **Tipografia inspirada na referência visual**
+  - Usar Inter no corpo e nos controles e Overpass nos títulos, sem copiar textos, dados ou imagens da referência.
+  - Manter o botão flutuante do WhatsApp do site e seu número oficial; usar microtexto próprio da clínica.
